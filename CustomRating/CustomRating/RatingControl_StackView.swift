@@ -9,7 +9,11 @@
 import UIKit
 
 class RatingControl_StackView: UIStackView {
-
+    // MARK: Properties
+    private var ratingButtons = [UIButton]()
+    var rating = 0
+    
+    
     // MARK: Initialization
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -21,18 +25,34 @@ class RatingControl_StackView: UIStackView {
         setupButtons()
     }
     
+    
     // MARK: Private Methods
     private func setupButtons() {
-        let button = UIButton()
-        button.backgroundColor = UIColor.red
         
-        // Add constraints
-        button.translatesAutoresizingMaskIntoConstraints = false    // disables the button's automatically generated constraints
-        button.heightAnchor.constraint(equalToConstant: 44.0).isActive = true
-        button.widthAnchor.constraint(equalToConstant: 44.0).isActive = true
+        for _ in 0..<5 {
+            // Create button
+            let button = UIButton()
+            button.backgroundColor = UIColor.red
         
-        // Add the button to the stack
-        addArrangedSubview(button)
+            // Add constraints
+            button.translatesAutoresizingMaskIntoConstraints = false    // disables the button's automatically generated constraints
+            button.heightAnchor.constraint(equalToConstant: 50.0).isActive = true
+            button.widthAnchor.constraint(equalToConstant: 50.0).isActive = true
+        
+            // Setup the button action
+            button.addTarget(self, action: #selector(RatingControl_StackView.ratingButtonTapped(button:)), for: .touchUpInside)
+        
+            // Add the button to the stack
+            addArrangedSubview(button)
+            
+            // Add new button to the rating button array
+            ratingButtons.append(button)
+        }
+    }
+    
+    // MARK: Button Action
+    @objc func ratingButtonTapped(button: UIButton) {
+        print("Button Pressed")
     }
     
 }
