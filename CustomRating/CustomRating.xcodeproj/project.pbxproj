@@ -15,6 +15,7 @@
 		D627441720A92E7200969A01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D627441520A92E7200969A01 /* LaunchScreen.storyboard */; };
 		D627442220A92E7300969A01 /* CustomRatingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D627442120A92E7200969A01 /* CustomRatingTests.swift */; };
 		D627442D20A92E7300969A01 /* CustomRatingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D627442C20A92E7300969A01 /* CustomRatingUITests.swift */; };
+		D627443B20A931D600969A01 /* RatingControl_StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D627443A20A931D600969A01 /* RatingControl_StackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D627442820A92E7300969A01 /* CustomRatingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomRatingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D627442C20A92E7300969A01 /* CustomRatingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRatingUITests.swift; sourceTree = "<group>"; };
 		D627442E20A92E7300969A01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D627443A20A931D600969A01 /* RatingControl_StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl_StackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				D627440920A92E7200969A01 /* AppDelegate.swift */,
 				D627440B20A92E7200969A01 /* ViewController.swift */,
+				D627443A20A931D600969A01 /* RatingControl_StackView.swift */,
 				D627440D20A92E7200969A01 /* Main.storyboard */,
 				D627441320A92E7200969A01 /* Assets.xcassets */,
 				D627441520A92E7200969A01 /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 			files = (
 				D627440C20A92E7200969A01 /* ViewController.swift in Sources */,
 				D627440A20A92E7200969A01 /* AppDelegate.swift in Sources */,
+				D627443B20A931D600969A01 /* RatingControl_StackView.swift in Sources */,
 				D627441220A92E7200969A01 /* CustomRating.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
