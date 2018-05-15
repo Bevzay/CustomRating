@@ -45,12 +45,16 @@
                                     <constraint firstAttribute="width" constant="128" id="k4g-vJ-EEG"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nJ5-xG-WEB" customClass="RatingControl_StackView" customModule="CustomRating" customModuleProvider="target">
-                                <rect key="frame" x="46.5" y="365" width="282" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="282" id="Ez2-bl-WZE"/>
-                                    <constraint firstAttribute="height" constant="50" id="goh-9V-W7C"/>
-                                </constraints>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nJ5-xG-WEB" customClass="RatingControl_StackView" customModule="CustomRating" customModuleProvider="target">
+                                <rect key="frame" x="71.5" y="365" width="232" height="40"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starCount">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="starSize">
+                                        <size key="value" width="40" height="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
