@@ -63,7 +63,7 @@ import UIKit
         let emptyStar = UIImage(named: "star-unrate", in: bundle, compatibleWith: self.traitCollection)
         let highlightedStar = UIImage(named: "star-highlighted", in: bundle, compatibleWith: self.traitCollection)
         
-        for _ in 0..<starCount {
+        for index in 0..<starCount {
             // Create button
             let button = UIButton()
             
@@ -77,6 +77,9 @@ import UIKit
             button.translatesAutoresizingMaskIntoConstraints = false    // disables the button's automatically generated constraints
             button.heightAnchor.constraint(equalToConstant: starSize.height).isActive = true
             button.widthAnchor.constraint(equalToConstant: starSize.width).isActive = true
+            
+            // Set the accessibility label
+            button.accessibilityLabel = "Set \(index + 1) star rating"
         
             // Setup the button action
             button.addTarget(self, action: #selector(RatingControl_StackView.ratingButtonTapped(button:)), for: .touchUpInside)
@@ -87,6 +90,8 @@ import UIKit
             // Add new button to the rating button array
             ratingButtons.append(button)
         }
+        
+        updateButtonSelectionStates()
     }
     
     //---
@@ -113,6 +118,7 @@ import UIKit
         for (index, button) in ratingButtons.enumerated() {
             // If the index of a button is less than the rating, that button should be selected
             button.isSelected = index < rating
+ 
         }
     }
     
