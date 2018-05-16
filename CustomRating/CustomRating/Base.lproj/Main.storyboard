@@ -72,6 +72,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="photoImageView" destination="nJ5-xG-WEB" id="auB-CZ-Udg"/>
+                        <outlet property="ratingControl" destination="nJ5-xG-WEB" id="iNi-gQ-p4D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
