@@ -46,13 +46,13 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleAspectFit" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nJ5-xG-WEB" customClass="RatingControl_StackView" customModule="CustomRating" customModuleProvider="target">
-                                <rect key="frame" x="71.5" y="365" width="232" height="40"/>
+                                <rect key="frame" x="46.5" y="365" width="282" height="50"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="starCount">
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="size" keyPath="starSize">
-                                        <size key="value" width="40" height="40"/>
+                                        <size key="value" width="50" height="50"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </stackView>
@@ -74,6 +74,7 @@
                     </view>
                     <connections>
                         <outlet property="photoImageView" destination="nJ5-xG-WEB" id="auB-CZ-Udg"/>
+                        <outlet property="rateControl" destination="nJ5-xG-WEB" id="cm4-In-yFU"/>
                         <outlet property="ratingControl" destination="nJ5-xG-WEB" id="iNi-gQ-p4D"/>
                     </connections>
                 </viewController>
